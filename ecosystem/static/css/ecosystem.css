@@ -1,0 +1,148 @@
+/* slightly enlarge the image on hover */
+a.menuitem .image-menu {
+    transition: transform 300ms;
+}
+a.menuitem:hover .image-menu {
+    transform: scale(1.1);
+}
+.nav-link {
+	font-weight: 700;
+	color: black;
+}
+.nav-link :hover {
+	color: hotpink;
+}
+.footer {
+	/* background-image: url(https://fivesteps.defichain.ac/static/img/jelly.png); */
+	background-image: url(https://choose.defichain.ac/img/Jelly_Slide_Up.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 25%;
+}
+h5 {
+	margin-top: 3px; 
+}
+.footer_h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+	
+}
+.footer_icon {
+	color: hotpink;	
+}
+.footer_icon:hover {
+	color: black;	
+}
+div1[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+div1[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+div1[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+body {
+}
+footer {
+	overflow: hidden;
+}
+footer a:link {
+  font-weight: bold;
+  text-decoration-color: hotpink;
+  color: hotpink;
+}
+/* visited link */
+footer a:visited {
+  font-weight: bold;
+  text-decoration-color: hotpink;
+  color: hotpink;
+}
+
+/* mouse over link */
+footer a:hover {
+  font-weight: bold;
+  text-decoration-color: hotpink;
+  color: hotpink;
+}
+
+/* selected link */
+footer a:active {
+  font-weight: bold;
+  text-decoration-color: hotpink;
+  color: white;
+}
+.footer_links a:link {
+  font-weight: normal;
+  text-decoration-color: hotpink;
+  color: white;
+}
+.footer_links a:visited {
+  font-weight: normal;
+  text-decoration-color: hotpink;
+  color: white;
+}
+.footer_links a:hover {
+  font-weight: normal;
+  text-decoration-color: white;
+  color: hotpink;
+}
+
+.copyright a:link {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+.copyright a:visited {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+.copyright a:hover {
+  font-weight: normal;
+  text-decoration: none;
+  color: hotpink;
+}
+.carousel_text_button{
+	margin-left: 10%;
+}
+.carousel_icon {
+	margin-right: 10%;
+}
+@media only screen and (max-width: 991px) {
+.footer_ul {
+    margin-bottom: 1rem;
+	
+}
+.corousel_elements {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.carousel_icon {
+	margin-top: 1rem;
+	height: auto;
+	width: 60%;
+	background-size: 300px 300px;
+	margin-right: 5%;
+}
+.carousel_text_button {
+	height: auto;
+	width: 80%;
+	margin-left: 0%;
+	}
+}
+@media only screen and (max-width: 767px) {
+.footer_ul {
+    margin-bottom: 0rem;
+	
+}

@@ -1,0 +1,22 @@
+from django.contrib import admin
+from info.models import *
+# Register your models here.
+admin.site.register(Network)
+admin.site.register(Coins)
+admin.site.register(Fiat)
+admin.site.register(Waehrung)
+admin.site.register(Exchange)
+admin.site.register(Tradingpairs)
+admin.site.register(Paymentservice)
+admin.site.register(Wallets)
+admin.site.register(Addressderivation)
+admin.site.register(Functions)
+admin.site.register(Wallettype)
+admin.site.register(Addressmode)
+admin.site.register(Developer)
+admin.site.register(Platform)
+admin.site.register(Languages)
+admin.site.register(Serviceplatform)
+admin.site.register(Services)
+admin.site.register(Wrappingservice)
+admin.site.register(Servicetype)
