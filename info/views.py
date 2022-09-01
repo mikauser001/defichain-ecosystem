@@ -38,6 +38,8 @@ def exchanges_filter(request):
 	context = {'exchanges': exchanges, 'networks': networks, 'query_network': query_network, 'title_query': title_query}
 	return render(request, "cms/filter_exchanges_all.html", context)
 
+ # Bei Filtern erstmal mit Klassen arbeiten, ist deutlich einfacher
+	# Thema context: Linie 38 brauchst du theoretisch nicht, probier es mit context = {} in L.14 und context['networks'] = Network.objects.all() etc.
 
 class FilteredPersonListView(SingleTableMixin, FilterView):
     table_class = ExchangeTable
