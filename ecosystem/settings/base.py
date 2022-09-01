@@ -16,6 +16,8 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
+# Wo konfigurierst du die DEBUG einstellungen? Ich glaube auf defi website ist der Debug Mode an, der sollte auf False stehen wenn du nichtmehr in der Testphase bist
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -115,7 +117,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-} # Ich würde auf Postgres wechseln 
+} # Ich würde auf Postgres als Datenbank wechseln 
 
 
 # Password validation
